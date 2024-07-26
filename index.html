@@ -5,24 +5,40 @@
     <meta name="description" content="lesson-9">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natalia's page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
 
 
   <nav>
-    <a href="#About">About</a> |
-    <a href="#Experience">Experience</a> |
-    <a href="#Connect">Connect</a>
-  </nav>
-  
-    <h1>Natalia Sokolova</h1>
-    
-    <section id="About">
-      <h2>About</h2>
-        <p>I am a freelance web developer and designer specializing in high-quality Shopify & and WordPress development. I update, maintain, and troubleshoot websites.</p>
-    </section> 
 
-    <section id = "Experience"> 
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#connect">Contact</a>
+    </div>
+    <div class="nav-icons">
+      <i class="fa-brands fa-github"></i>
+      <i class="fab fa-twitter"></i>
+     </div>
+
+  </nav>
+
+
+
+    <div class = "content">
+      <img src="img/IMG_1.jpg" width="200" height="150"> 
+      <h1>Natalia Sokolova</h1>
+      <section id="about">
+       
+        <h2>About</h2>
+          <p>I am a freelance web developer and designer specializing in high-quality Shopify & and WordPress development. I update, maintain, and troubleshoot websites.</p>
+      </section> 
+    
+    
+    <section id = "experience"> 
       <h2>Experience</h2>
       <ul>
         <li>Data Analyst, Intern</li>
@@ -35,17 +51,38 @@
         Cross-tested website designs across multiple browsers.
         Managed WordPress content, designed and installed multiple plugins.
         Collaborated to manage all web change requests, updates including designing, developing new pages, sections as needed.
-        Built several responsive sites and completely from scratch made use of web tools to set up and manage websites using HTML5, CSS, JavaScript.</p>
+        </p>
    
       </section> 
 
-    <section  id = "Connect">
-      <h2>Connect</h2>   
-        <ul>
-          <li><a href="www.linkedin.com/in/sokolovanatalia">Linkedin</a></li>
-          <li><a href="https://github.com/NataliaSokolova">Github</a></li>
-        </ul> 
-    </section>  
+    </div>
+
+
+    <footer>
+      <div class="footer-container">
+          <div class="footer-section">
+              <h3>Connect</h3>
+              <p>Email: nataliya.a.sokolova@gmail.com</p>
+              <p>Phone: (425) 214-5050</p>
+          </div>
+          <div class="footer-section">
+              <h3>Follow Me</h3>
+              <a href="https://github.com/NataliaSokolova" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://twitter.com/NataliaSokolova" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com/in/sokolovanatalia" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="footer-section">
+              <h3>Subscribe to my Newsletter</h3>
+              <form>
+                  <input type="email" placeholder="Enter your email" required>
+                  <button type="submit">Subscribe</button>
+              </form>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 </p>
+      </div>
+  </footer>
 
 </body>
 </html>
