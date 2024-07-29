@@ -94,7 +94,7 @@ button:hover {
 }
 
 #about{
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .container{
 
@@ -113,6 +113,10 @@ button:hover {
     padding: 5px;
   }
 
+ #experience{
+margin-top: 50px;
+ }
+ 
   .experience-section{
     margin-top: 50px;
     margin-bottom: 50px;
