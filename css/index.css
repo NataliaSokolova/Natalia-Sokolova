@@ -65,16 +65,17 @@ main{
     margin-right: auto;
     width: 80%;   
 }
-.content{
+.content {
     display: flex;
   
 }
-.contentsec2{
+.contentsec2 {
    padding-left: 40px;
- 
    
+   align-self:flex-end;
    
 }
+
 button {
     background-color: #FF6400; 
     border: none;
