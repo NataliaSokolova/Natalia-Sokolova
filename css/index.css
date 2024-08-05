@@ -9,6 +9,16 @@ body {
 
 }
 
+header{
+    position: sticky;
+     top: 0;
+     width: 100%;
+     padding: 0px;
+     text-align: center;
+          
+}
+
+
 nav {
     display: flex;
     justify-content: center; 
@@ -97,25 +107,43 @@ button:hover {
 
 #about{
     margin-top: 50px;
+    padding: 20px;
 }
-.container{
+#experience {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+  }
+  
+  .job {
+    margin-bottom: 30px;
+  }
+  
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  
 
-    display:flex;
-    flex-direction: column;
-}
-.container > li:nth-child(2) {
-    
-    border-left: 2px solid #FF6400;
-    margin-top: 5px;
-    padding-left: 10px;
-    list-style-type: none;
   }
-  .container > li:nth-child(1) {
-    
-    border-left: 2px solid#FF6400;
-    padding-left: 10px;
-    list-style-type: none;
+  
+  .job-title {
+    margin-top: 20px;
+    font-size: 1.2em;
   }
+  
+  .job-dates {
+    color: #666;
+  }
+  
+  .job-description {
+    padding-top: 10px;
+    font-size: 1em;
+    color: #333;
+  }
+  
 
  #experience{
 margin-top: 50px;
@@ -125,7 +153,9 @@ margin-top: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-
+#skills{
+    padding: 20px;
+}
 
 .projects-section {
     display:flex;
