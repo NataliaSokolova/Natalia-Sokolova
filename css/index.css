@@ -1,0 +1,281 @@
+
+    
+
+body {
+    margin: 0;
+    font-family:  "Montserrat", sans-serif;
+    background-color:#F3F2EF;
+    color: #595151; /* Default text color */
+
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color:#F3F2EF;
+    border-bottom: 1px solid #C7C7C7;
+    height: 80px;
+    padding: 0 20px;
+
+   
+}
+
+.nav-links a {
+    color:black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: small;
+    padding: 10px; 
+}
+
+.nav-links a:hover {
+    color: #FF6400;
+    border-bottom: 1px solid #FF6400;
+}
+
+.nav-icons i {
+    color: grey;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-icons i:hover {
+    color: #945DD6;
+}
+.nav-icons{
+    margin-right: 0px;
+}
+
+
+h1{
+    color:rgb(8, 6, 6);
+    font-weight: 500;
+}
+
+h2{
+    color:rgb(8, 6, 6);
+    font-weight: 500;
+}
+
+main{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;   
+}
+.content {
+    display: flex;
+  
+}
+.flex-container {
+   padding-left: 40px;
+   align-self:flex-end;
+   
+}
+
+button {
+    background-color: #FF6400; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #945DD6;
+}
+
+#about{
+    margin-top: 50px;
+}
+.container{
+
+    display:flex;
+    flex-direction: column;
+}
+.container > li:nth-child(2) {
+    
+    border-left: 2px solid #FF6400;
+    margin-top: 5px;
+    padding-left: 10px;
+    list-style-type: none;
+  }
+  .container > li:nth-child(1) {
+    
+    border-left: 2px solid#FF6400;
+    padding-left: 10px;
+    list-style-type: none;
+  }
+
+ #experience{
+margin-top: 50px;
+ }
+ 
+  .experience-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+
+.projects-section {
+    display:flex;
+    background-color: #fff;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;  
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    width: 100%;
+    max-width: 300px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.project-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-details h3 {
+    margin: 0 0 10px 0;
+   font-weight: 500;
+    color: #333;
+}
+
+.project-details p {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #FF6400;
+
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+
+}
+
+footer {
+    background-color: #333333;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin: 20px 0;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section form {
+    margin: 0;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section button {
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section button:hover {
+    background-color: #945DD6;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: green;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+
+

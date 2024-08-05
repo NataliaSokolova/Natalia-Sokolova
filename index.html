@@ -5,47 +5,136 @@
     <meta name="description" content="lesson-9">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natalia's page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
+<header>
   <nav>
-    <a href="#About">About</a> |
-    <a href="#Experience">Experience</a> |
-    <a href="#Connect">Connect</a>
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="">BLOG</a>
+      <a href="#connect">CONTACT</a>
+    </div>
   </nav>
-  
-    <h1>Natalia Sokolova</h1>
-    
-    <section id="About">
-      <h2>About</h2>
-        <p>I am a freelance web developer and designer specializing in high-quality Shopify & and WordPress development. I update, maintain, and troubleshoot websites.</p>
-    </section> 
+</header>
 
-    <section id = "Experience"> 
+<main>
+  
+   <div class = "content">
+      <div class = "contentsec">
+        <img src="img/IMG_1.jpg" alt="Pictute of web developer" width="400" height="300"> 
+      </div>
+      <div class = "flex-container">
+        <h1>Hello! I'm Natalia Sokolova</h1>
+          <p>I am a freelance web developer specializing in high-quality Shopify & and WordPress development.</p>
+          <button type="button">Let's talk!</button> 
+      </div>      
+   </div>
+    
+    <section id="about">
+        <h2>About</h2>
+          <p>I am a freelance web developer specializing in high-quality Shopify & and WordPress development. I update, maintain, and troubleshoot websites.</p>
+    </section> 
+    
+    
+    <section id = "experience"> 
       <h2>Experience</h2>
-      <ul>
-        <li>Data Analyst, Intern</li>
-        <li>Freelance Web Developer and SEO specialist</li>
-      </ul>
-      <p>Identified the clients and the project’s needs to increase their conversion rates and decrease their bounce rates.
+        <ul class = "container">
+          <li>Data Analyst, Intern</li>
+          <li>Freelance Web Developer and SEO specialist</li>
+        </ul>
+          <p class = "experience-section">Identified the clients and the project’s needs to increase their conversion rates and decrease their bounce rates.
         Stayed up-to-date on the latest SEO best practices.
         Developed on-site body content and page titles in support of SEO strategies.
         Optimized keyword use and effectiveness.
         Cross-tested website designs across multiple browsers.
         Managed WordPress content, designed and installed multiple plugins.
         Collaborated to manage all web change requests, updates including designing, developing new pages, sections as needed.
-        Built several responsive sites and completely from scratch made use of web tools to set up and manage websites using HTML5, CSS, JavaScript.</p>
+          </p>
+    </section> 
+      <h2>Take A Look At My Recent Projects</h2>
+    
+    <section id="projects" class="projects-section">
+        
+        <div class="project-card">
+            <img src="img/img_2.png" alt="Project 1" class="project-image">
+            <div class="project-details">
+                <h3>Project Title 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="https://linktoproject1.com" target="_blank" class="project-link">View Project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="img/img_2.png" alt="Project 2" class="project-image">
+            <div class="project-details">
+                <h3>Project Title 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="https://linktoproject2.com" target="_blank" class="project-link">View Project</a>
+            </div>
+            
+        </div>
    
-      </section> 
+    </section>
+   
+    <section id="projects" class="projects-section">
+        
+      <div class="project-card">
+          <img src="img/img_2.png" alt="Project 1" class="project-image">
+          <div class="project-details">
+              <h3>Project Title 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="https://linktoproject3.com" target="_blank" class="project-link">View Project</a>
+          </div>
+      </div>
+      <div class="project-card">
+          <img src="img/img_2.png" alt="Project 2" class="project-image">
+          <div class="project-details">
+              <h3>Project Title 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="https://linktoproject4.com" target="_blank" class="project-link">View Project</a>
+          </div>
+          
+      </div>
+      
+   
 
-    <section  id = "Connect">
-      <h2>Connect</h2>   
-        <ul>
-          <li><a href="www.linkedin.com/in/sokolovanatalia">Linkedin</a></li>
-          <li><a href="https://github.com/NataliaSokolova">Github</a></li>
-        </ul> 
-    </section>  
+ 
+    </section>
+</main>
+
+
+
+<footer>
+      <div class="footer-container" id = "connect">
+          <div class="footer-section">
+              <h3>Connect</h3>
+              <p>Email: nataliya.a.sokolova@gmail.com</p>
+              <p>Phone: (425) 214-5050</p>
+          </div>
+          <div class="footer-section">
+              <h3>Follow Me</h3>
+              <a href="https://github.com/NataliaSokolova" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://twitter.com/NataliaSokolova" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com/in/sokolovanatalia" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="footer-section">
+              <h3>Subscribe to my Newsletter</h3>
+              <form>
+                  <input type="email" placeholder="Enter your email" required>
+                  <button class="button-form" type="submit">Subscribe</button>
+              </form>
+          </div>
+      </div>
+    
+</footer>
 
 </body>
 </html>
