@@ -49,12 +49,14 @@ nav {
 }
 
 
-h1,h2{
+h1{
     color:rgb(8, 6, 6);
-    font-size:x-large;
     font-weight: 500;
-  
+}
 
+h2{
+    color:rgb(8, 6, 6);
+    font-weight: 500;
 }
 
 main{
@@ -69,9 +71,8 @@ main{
     display: flex;
   
 }
-.contentsec2 {
+.flex-container {
    padding-left: 40px;
-   
    align-self:flex-end;
    
 }
@@ -102,16 +103,18 @@ button:hover {
     display:flex;
     flex-direction: column;
 }
-.container > div:nth-child(2) {
+.container > li:nth-child(2) {
     
     border-left: 2px solid #FF6400;
     margin-top: 5px;
-    padding: 5px;
+    padding-left: 10px;
+    list-style-type: none;
   }
-  .container > div:nth-child(1) {
+  .container > li:nth-child(1) {
     
     border-left: 2px solid#FF6400;
-    padding: 5px;
+    padding-left: 10px;
+    list-style-type: none;
   }
 
  #experience{
@@ -162,7 +165,7 @@ margin-top: 50px;
 
 .project-details h3 {
     margin: 0 0 10px 0;
-    font-size: 1.5em;
+   font-weight: 500;
     color: #333;
 }
 
