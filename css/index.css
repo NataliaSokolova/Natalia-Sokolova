@@ -67,6 +67,8 @@ h1{
 h2{
     color:rgb(8, 6, 6);
     font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 main{
@@ -112,8 +114,9 @@ button:hover {
 #experience {
     padding: 20px;
     background-color: #f9f9f9;
-    margin: 20px 0;
+  
   }
+ 
   
   .job {
     margin-bottom: 30px;
@@ -130,7 +133,6 @@ button:hover {
   }
   
   .job-title {
-    margin-top: 20px;
     font-size: 1.2em;
   }
   
@@ -147,6 +149,7 @@ button:hover {
 
  #experience{
 margin-top: 50px;
+
  }
  
   .experience-section{
@@ -154,27 +157,24 @@ margin-top: 50px;
     margin-bottom: 50px;
   }
 #skills{
+    margin-top: 50px;
     padding: 20px;
+    text-align: center;
 }
-#projects{
+
+
+
+.projects-section {
     display:flex;
     background-color: #fff;
     max-width: 1200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     flex-wrap: wrap;
-
-}
-.projects-section {
-    display: flex;
-    flex-wrap: wrap;
-    
 }
 
-.projects-section h2 {
-    text-align: center;
-    margin-bottom: 40px;  
-}
+
+
 
 .project-card {
    
@@ -259,7 +259,7 @@ footer {
 
 .footer-section p,
 .footer-section form {
-    margin: 0;
+    margin: 10px;
 }
 
 .footer-section form {
