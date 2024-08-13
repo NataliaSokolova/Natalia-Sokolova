@@ -9,24 +9,35 @@ body {
 
 }
 
+header{
+    position: sticky;
+     top: 0;
+     width: 100%;
+     padding: 0px;
+     text-align: center;
+          
+}
+
+
 nav {
     display: flex;
     justify-content: center; 
-    align-items: center;
     background-color:#F3F2EF;
     border-bottom: 1px solid #C7C7C7;
     height: 80px;
     padding: 0 20px;
+    flex-direction: column;
 
    
 }
 
 .nav-links a {
+   
     color:black;
     text-decoration: none;
     margin: 0 15px;
     font-size: small;
-    padding: 10px; 
+    padding: 30px; 
 }
 
 .nav-links a:hover {
@@ -49,6 +60,8 @@ nav {
 }
 
 
+
+
 h1{
     color:rgb(8, 6, 6);
     font-weight: 500;
@@ -57,18 +70,20 @@ h1{
 h2{
     color:rgb(8, 6, 6);
     font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 main{
     margin-top: 80px;
     margin-bottom: 80px;
-    width: 70px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;   
 }
 .content {
     display: flex;
+  
   
 }
 .flex-container {
@@ -77,11 +92,11 @@ main{
    
 }
 
-button {
+.button-contentsec {
     background-color: #FF6400; 
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -96,35 +111,96 @@ button:hover {
 }
 
 #about{
-    margin-top: 50px;
+    margin-top: 30px;
+    padding: 20px;
 }
-.container{
-
-    display:flex;
-    flex-direction: column;
-}
-.container > li:nth-child(2) {
-    
-    border-left: 2px solid #FF6400;
-    margin-top: 5px;
-    padding-left: 10px;
-    list-style-type: none;
+#experience {
+    padding: 20px;
+    background-color: #f9f9f9;
+  
   }
-  .container > li:nth-child(1) {
-    
-    border-left: 2px solid#FF6400;
-    padding-left: 10px;
-    list-style-type: none;
-  }
-
- #experience{
-margin-top: 50px;
- }
  
-  .experience-section{
-    margin-top: 50px;
-    margin-bottom: 50px;
+  
+  .job {
+    margin-bottom: 30px;
+    flex-direction: column;
+
   }
+  
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    list-style-type: none; 
+    padding-left: 0; 
+    margin: 0; 
+  }
+
+  .job-title {
+    font-size: 1.2em;
+    text-decoration: none;
+
+   
+  }
+  
+  .job-dates {
+    color: #666;
+    
+  }
+  
+  .job-description {
+    padding-top: 10px;
+    font-size: 1em;
+    color: #333;
+  }
+
+
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   
+    
+}
+
+
+.job {
+    background-color: #f9f9f9;
+    padding: 1em;
+   
+}
+
+.job-header {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.job-dates {
+    color: #666;
+}
+
+.job-description p {
+    margin: 0;
+}
+
+
+
+
+
+#skills{
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
 
 
 .projects-section {
@@ -133,25 +209,23 @@ margin-top: 50px;
     max-width: 1200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    flex-wrap: wrap;
 }
 
-.projects-section h2 {
-    text-align: center;
-    margin-bottom: 40px;  
-}
+
 
 .project-card {
-    display: flex;
-    flex-wrap: wrap;
+   
     background-color: #f9f9f9;
     border-radius: 8px;
     margin: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333%);
 }
 
 .project-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -165,7 +239,7 @@ margin-top: 50px;
 
 .project-details h3 {
     margin: 0 0 10px 0;
-   font-weight: 500;
+    font-weight: 500;
     color: #333;
 }
 
@@ -178,14 +252,15 @@ margin-top: 50px;
 .project-link {
     text-decoration: none;
     color: #FF6400;
-
     margin-top: auto;
     align-self: flex-start;
 }
 
 .project-link:hover {
     text-decoration: underline;
+
 }
+
 
 
 footer{
@@ -223,7 +298,7 @@ footer {
 
 .footer-section p,
 .footer-section form {
-    margin: 0;
+    margin: 10px;
 }
 
 .footer-section form {
@@ -240,7 +315,7 @@ footer {
 }
 
 .footer-section button {
-
+   background-color:#FF6400;;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -277,5 +352,97 @@ footer {
 
 
 
+/* Mobile Styles */
 
 
+
+
+@media (max-width: 600px) {
+    body{
+      font-size: small;
+    }
+    .nav-links a {
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+    height: 130px;
+    }
+    .nav-links a:hover{
+        border-bottom:hidden;
+  
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .flex-container {
+        padding-left: 20px;
+    
+    }
+
+    .button-contentsec{
+        width: calc(100% - 180px); 
+        padding: calc(0.8em - 1px) calc(1.2em - 1px); 
+    }
+    flex-container{
+        width: 100%;
+    }
+
+    #about, #experience, #skills, #projects{
+        margin-top: 10px;
+    }
+
+
+
+}
+
+/* Tablet styles */
+
+
+@media (max-width: 600px) {
+    body{
+        font-size:medium
+      }
+    .nav-links a {
+          padding: 2px;
+          display: flex;
+        
+      }
+    nav{
+        height: 130px;
+        flex-direction: row;
+        }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .contentsec{
+        padding-left: 20px;
+    }
+    .flex-container {
+        padding-left: 20px;
+        
+    
+    }
+    #about, #experience, #skills, #projects{
+        margin-top: 10px;
+    }
+
+}
+
+/* Desktop styles */
+
+@media (min-width: 1024px) {
+    .content {
+        padding: 2em 5em;
+    }
+}
