@@ -9,24 +9,35 @@ body {
 
 }
 
+header{
+    position: sticky;
+     top: 0;
+     width: 100%;
+     padding: 0px;
+     text-align: center;
+          
+}
+
+
 nav {
     display: flex;
     justify-content: center; 
-    align-items: center;
     background-color:#F3F2EF;
     border-bottom: 1px solid #C7C7C7;
     height: 80px;
     padding: 0 20px;
+    flex-direction: column;
 
    
 }
 
 .nav-links a {
+   
     color:black;
     text-decoration: none;
     margin: 0 15px;
     font-size: small;
-    padding: 10px; 
+    padding: 30px; 
 }
 
 .nav-links a:hover {
@@ -57,6 +68,8 @@ h1{
 h2{
     color:rgb(8, 6, 6);
     font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 main{
@@ -97,34 +110,59 @@ button:hover {
 
 #about{
     margin-top: 50px;
+    padding: 20px;
 }
-.container{
+#experience {
+    padding: 20px;
+    background-color: #f9f9f9;
+  
+  }
+ 
+  
+  .job {
+    margin-bottom: 30px;
+  }
+  
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  
 
-    display:flex;
-    flex-direction: column;
-}
-.container > li:nth-child(2) {
-    
-    border-left: 2px solid #FF6400;
-    margin-top: 5px;
-    padding-left: 10px;
-    list-style-type: none;
   }
-  .container > li:nth-child(1) {
-    
-    border-left: 2px solid#FF6400;
-    padding-left: 10px;
-    list-style-type: none;
+  
+  .job-title {
+    font-size: 1.2em;
   }
+  
+  .job-dates {
+    color: #666;
+  }
+  
+  .job-description {
+    padding-top: 10px;
+    font-size: 1em;
+    color: #333;
+  }
+  
 
  #experience{
 margin-top: 50px;
+
  }
  
   .experience-section{
     margin-top: 50px;
     margin-bottom: 50px;
   }
+#skills{
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
 
 
 .projects-section {
@@ -133,25 +171,23 @@ margin-top: 50px;
     max-width: 1200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    flex-wrap: wrap;
 }
 
-.projects-section h2 {
-    text-align: center;
-    margin-bottom: 40px;  
-}
+
 
 .project-card {
-    display: flex;
-    flex-wrap: wrap;
+   
     background-color: #f9f9f9;
     border-radius: 8px;
     margin: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333%);
 }
 
 .project-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -165,7 +201,7 @@ margin-top: 50px;
 
 .project-details h3 {
     margin: 0 0 10px 0;
-   font-weight: 500;
+    font-weight: 500;
     color: #333;
 }
 
@@ -178,13 +214,32 @@ margin-top: 50px;
 .project-link {
     text-decoration: none;
     color: #FF6400;
-
     margin-top: auto;
     align-self: flex-start;
 }
 
 .project-link:hover {
     text-decoration: underline;
+
+}
+
+
+ @media (max-width: 675px) {
+    .nav-links {
+        flex-direction: column; 
+    }
+    .nav-links a {
+        width: 100%;
+    }
+    nav{
+    border-bottom:#fff;
+    height: 130px;
+
+    }
+    .nav-links a:hover{
+        border-bottom:hidden;
+  
+    }
 }
 
 
@@ -223,7 +278,7 @@ footer {
 
 .footer-section p,
 .footer-section form {
-    margin: 0;
+    margin: 10px;
 }
 
 .footer-section form {
@@ -274,6 +329,7 @@ footer {
 .footer-bottom p {
     margin: 0;
 }
+
 
 
 
