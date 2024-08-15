@@ -363,7 +363,7 @@ footer {
 
 
 
-/* Mobile Styles */
+/* Mobile Styles -------------------------------------------------------*/
 
 
 
@@ -423,7 +423,7 @@ footer {
 
 }
 
-/* Tablet styles */
+/* Tablet styles --------------------------------------------------------*/
 
 
 @media screen and (min-width: 600px) and (max-width:1200px)  {
