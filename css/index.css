@@ -18,7 +18,7 @@ header{
           
 }
 
-/* Navigaition*/
+/* Navigaition-------------------------------------------------------------------*/
 
 
 nav {
@@ -62,7 +62,7 @@ nav {
 }
 
 
-/* Headers */
+/* Headers -------------------------------------------------------------*/
 
 h1{
     color:rgb(8, 6, 6);
@@ -76,7 +76,7 @@ h2{
     margin-bottom: 30px;
 }
 
-/* Main */
+/* Main------------------------------------------------------------------- */
 
 main{
     margin-top: 80px;
@@ -114,14 +114,14 @@ button:hover {
     background-color: #945DD6;
 }
 
-/* About section*/
+/* About section*-----------------------------------------------------------------*/
 
 #about{
     margin-top: 30px;
     padding: 20px;
 }
 
-/* Experience section*/
+/* Experience section----------------------------------------------------------*/
 
 
 
@@ -204,7 +204,7 @@ button:hover {
 
 
 
-/* Skills section*/
+/* Skills section---------------------------------------------------*/
 
 #skills{
     margin-top: 30px;
@@ -272,7 +272,7 @@ button:hover {
 
 }
 
-/* Footer section*/
+/* Footer section------------------------------------------------------------*/
 
 footer{
     display: flex;
@@ -372,27 +372,40 @@ footer {
     body{
       font-size: small;
     }
+    
+    main{
+        margin-top: 20px;
+        margin-bottom: 80px;
+        width: 95%;   
+    }
     .nav-links a {
         padding: 2px;
         display: flex;
         flex-direction: column;
     }
+     
+  
     nav{
     height: 130px;
     }
     .nav-links a:hover{
         border-bottom:hidden;
-  
     }
     .content{
         display: flex;
         flex-direction: column;
        
+       
     }
+    h1{
+        text-align: center;
+    }
+  
+
     .flex-container {
-        padding-left: 20px;
-    
-    }
+        padding-left: 20px; 
+        
+     }
 
     .button-contentsec{
         width: calc(100% - 180px); 
@@ -403,7 +416,7 @@ footer {
     }
 
     #about, #experience, #skills, #projects{
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
 
@@ -413,47 +426,45 @@ footer {
 /* Tablet styles */
 
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width:1200px)  {
     body{
-        font-size:medium
-      }
-    .nav-links a {
-          padding: 2px;
-          display: flex;
-        
-      }
-    nav{
-        height: 130px;
-        flex-direction: row;
-        }
-
-    .nav-links {
-        flex-direction: row;
-        justify-content: center;
-    }
-    .content{
-        display: flex;
-        flex-direction: column;
+        font-size:0.9em;
        
+      }
+      nav {
+        padding: 2px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+      }
+
+      main{
+        margin-top: 20px;
+        margin-bottom: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;   
     }
     .contentsec{
         padding-left: 20px;
     }
     .flex-container {
-        padding-left: 20px;
+        padding-left: 40px;
         
     
     }
+  
     #about, #experience, #skills, #projects{
-        margin-top: 10px;
+        margin-top: 3px;
+ 
+    }
+    job-title{
+        padding-left: 10px;
+    }
+    job-dates{
+        margin-right: 10px;
     }
 
+  
 }
 
-/* Desktop styles */
-
-@media (min-width: 1024px) {
-    .content {
-        padding: 2em 5em;
-    }
-}
