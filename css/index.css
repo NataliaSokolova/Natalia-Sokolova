@@ -411,7 +411,7 @@ footer {
         width: calc(100% - 180px); 
         padding: calc(0.8em - 1px) calc(1.2em - 1px); 
     }
-    flex-container{
+    .flex-container{
         width: 100%;
     }
 
@@ -458,10 +458,10 @@ footer {
         margin-top: 3px;
  
     }
-    job-title{
+    .job-title{
         padding-left: 10px;
     }
-    job-dates{
+    .job-dates{
         margin-right: 10px;
     }
 
