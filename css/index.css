@@ -18,6 +18,8 @@ header{
           
 }
 
+/* Navigaition-------------------------------------------------------------------*/
+
 
 nav {
     display: flex;
@@ -60,6 +62,8 @@ nav {
 }
 
 
+/* Headers -------------------------------------------------------------*/
+
 h1{
     color:rgb(8, 6, 6);
     font-weight: 500;
@@ -72,16 +76,18 @@ h2{
     margin-bottom: 30px;
 }
 
+/* Main------------------------------------------------------------------- */
+
 main{
     margin-top: 80px;
     margin-bottom: 80px;
-    width: 70px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;   
 }
 .content {
     display: flex;
+  
   
 }
 .flex-container {
@@ -90,11 +96,11 @@ main{
    
 }
 
-button {
+.button-contentsec {
     background-color: #FF6400; 
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -108,10 +114,17 @@ button:hover {
     background-color: #945DD6;
 }
 
+/* About section*-----------------------------------------------------------------*/
+
 #about{
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 20px;
 }
+
+/* Experience section----------------------------------------------------------*/
+
+
+
 #experience {
     padding: 20px;
     background-color: #f9f9f9;
@@ -121,6 +134,8 @@ button:hover {
   
   .job {
     margin-bottom: 30px;
+    flex-direction: column;
+
   }
   
   .job-header {
@@ -129,16 +144,21 @@ button:hover {
     align-items: center;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
-  
-
+    list-style-type: none; 
+    padding-left: 0; 
+    margin: 0; 
   }
-  
+
   .job-title {
     font-size: 1.2em;
+    text-decoration: none;
+
+   
   }
   
   .job-dates {
     color: #666;
+    
   }
   
   .job-description {
@@ -146,19 +166,48 @@ button:hover {
     font-size: 1em;
     color: #333;
   }
-  
 
- #experience{
-margin-top: 50px;
 
- }
- 
-  .experience-section{
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   
+    
+}
+
+
+.job {
+    background-color: #f9f9f9;
+    padding: 1em;
+   
+}
+
+.job-header {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.job-dates {
+    color: #666;
+}
+
+.job-description p {
+    margin: 0;
+}
+
+
+
+/* Skills section---------------------------------------------------*/
+
 #skills{
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 20px;
     text-align: center;
 }
@@ -223,25 +272,7 @@ margin-top: 50px;
 
 }
 
-
- @media (max-width: 675px) {
-    .nav-links {
-        flex-direction: column; 
-    }
-    .nav-links a {
-        width: 100%;
-    }
-    nav{
-    border-bottom:#fff;
-    height: 130px;
-
-    }
-    .nav-links a:hover{
-        border-bottom:hidden;
-  
-    }
-}
-
+/* Footer section------------------------------------------------------------*/
 
 footer{
     display: flex;
@@ -295,7 +326,7 @@ footer {
 }
 
 .footer-section button {
-
+   background-color:#FF6400;;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -332,6 +363,108 @@ footer {
 
 
 
+/* Mobile Styles -------------------------------------------------------*/
 
 
+
+
+@media (max-width: 600px) {
+    body{
+      font-size: small;
+    }
+    
+    main{
+        margin-top: 20px;
+        margin-bottom: 80px;
+        width: 95%;   
+    }
+    .nav-links a {
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+     
+  
+    nav{
+    height: 130px;
+    }
+    .nav-links a:hover{
+        border-bottom:hidden;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+       
+       
+    }
+    h1{
+        text-align: center;
+    }
+  
+
+    .flex-container {
+        padding-left: 20px; 
+        
+     }
+
+    .button-contentsec{
+        width: calc(100% - 180px); 
+        padding: calc(0.8em - 1px) calc(1.2em - 1px); 
+    }
+    .flex-container{
+        width: 100%;
+    }
+
+    #about, #experience, #skills, #projects{
+        margin-top: 0px;
+    }
+
+
+
+}
+
+/* Tablet styles --------------------------------------------------------*/
+
+
+@media screen and (min-width: 600px) and (max-width:1200px)  {
+    body{
+        font-size:0.9em;
+       
+      }
+      nav {
+        padding: 2px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+      }
+
+      main{
+        margin-top: 20px;
+        margin-bottom: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;   
+    }
+    .contentsec{
+        padding-left: 20px;
+    }
+    .flex-container {
+        padding-left: 40px;
+        
+    
+    }
+  
+    #about, #experience, #skills, #projects{
+        margin-top: 3px;
+ 
+    }
+    .job-title{
+        padding-left: 10px;
+    }
+    .job-dates{
+        margin-right: 10px;
+    }
+
+  
+}
 
