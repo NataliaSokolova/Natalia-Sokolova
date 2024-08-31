@@ -27,26 +27,39 @@ for (let i = 0; i < skills.length; i++) {
   skillsList.appendChild(skill);
 }
 
-// Replace 'yourUsername' with your actual GitHub username
 const username = "NataliaSokolova";
+
+// // Fetch the list of repositories from the GitHub API
+// fetch(`https://api.github.com/users/${username}/repos`)
+//   .then(function (response) {
+//     // Convert the response to text
+//     return response.text();
+//   })
+//   .then(function (text) {
+//     const repositories = JSON.parse(text);
+
+//     displayRepositories(repositories);
+//     console.log(repositories);
+//   })
+//   .catch(function (error) {
+//     console.error("Error fetching repositories:", error);
+//   });
 
 // Fetch the list of repositories from the GitHub API
 fetch(`https://api.github.com/users/${username}/repos`)
-  .then(function (response) {
-    // Convert the response to text
-    return response.text();
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Request failed');  // Throw an error if the response is not OK
+    }
+    return response.json();  // Parse the response as JSON
   })
-  .then(function (text) {
-    const repositories = JSON.parse(text);
-
-    displayRepositories(repositories);
-    console.log(repositories);
+  .then(repositories => {
+    displayRepositories(repositories);  // Display the repositories
+    console.log(repositories);  // Log the repositories to the console
   })
-  .catch(function (error) {
-    console.error("Error fetching repositories:", error);
+  .catch(error => {
+    console.error('An error occurred:', error);  // Log any errors that occur during the fetch
   });
-
-
 
 const projectSection = document.getElementById("projects");
 const projectList = projectSection.querySelector("div.projects-section");
