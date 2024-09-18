@@ -1,16 +1,49 @@
-
-
-const footer = document.createElement('footer');
-const footerContent = document.createElement('p');
+const footer = document.createElement("footer");
+const footerContent = document.createElement("p");
 footer.appendChild(footerContent);
-const body = document.querySelector('body');
+const body = document.querySelector("body");
 body.appendChild(footer);
-const today = new Date(); 
+const today = new Date();
 const thisYear = today.getFullYear();
-const copyright = document.createElement('p');
+const copyright = document.createElement("p");
 copyright.innerHTML = `&copy; Sokolova ${thisYear}`;
 footer.appendChild(copyright);
 
+
+
+const username = "NataliaSokolova";
+
+// // Fetch the list of repositories from the GitHub API
+// fetch(`https://api.github.com/users/${username}/repos`)
+//   .then(function (response) {
+//     // Convert the response to text
+//     return response.text();
+//   })
+//   .then(function (text) {
+//     const repositories = JSON.parse(text);
+
+//     displayRepositories(repositories);
+//     console.log(repositories);
+//   })
+//   .catch(function (error) {
+//     console.error("Error fetching repositories:", error);
+//   });
+
+// Fetch the list of repositories from the GitHub API
+fetch(`https://api.github.com/users/${username}/repos`)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Request failed');  // Throw an error if the response is not OK
+    }
+    return response.json();  // Parse the response as JSON
+  })
+  .then(repositories => {
+    displayRepositories(repositories);  // Display the repositories
+    console.log(repositories);  // Log the repositories to the console
+  })
+  .catch(error => {
+    console.error('An error occurred:', error);  // Log any errors that occur during the fetch
+  });
 
 
 
@@ -60,3 +93,25 @@ messageForm.addEventListener('submit', function(event) {
 
 
 
+const projectSection = document.getElementById("projects");
+const projectList = projectSection.querySelector("div.projects-section");
+
+function displayRepositories(repositories) {
+  projectList.innerHTML = "";
+
+  repositories.forEach((repo) => {
+    const projectCard = document.createElement("li");
+    projectCard.className = "project-card";
+
+    projectCard.innerHTML = `
+       
+        <li class="project-details">
+          <h3>${repo.name}</h3>
+          <p>${repo.description || "No description provided."}</p>
+          <a href="" target="_blank" class="project-link">View Project</a>
+        </li>
+      `;
+
+    projectList.appendChild(projectCard);
+  });
+}
