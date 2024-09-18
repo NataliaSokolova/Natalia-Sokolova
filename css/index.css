@@ -209,10 +209,12 @@ button:hover {
 #skills{
     margin-top: 30px;
     padding: 20px;
-    text-align: center;
+ 
 }
 
-
+.leavemessage{
+    text-align: center;
+}
 
 .projects-section {
     display:flex;

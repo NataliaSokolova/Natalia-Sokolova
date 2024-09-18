@@ -47,7 +47,7 @@ fetch(`https://api.github.com/users/${username}/repos`)
 
 
 
-const skills = ["JavaScript", "HTML", "CSS", "WordPress", "GitHub", "Figma", "SQL", "Digital Marketing"];
+const skills = ["JavaScript", "HTML", "CSS", "WordPress", "GitHub", "Git","Figma", "SQL", "Digital Marketing"];
 const skillsSection = document.getElementById('skills');
 const skillsList = skillsSection.querySelector('ul');
 for(let i =0 ; i < skills.length; i++){
