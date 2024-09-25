@@ -13,23 +13,6 @@ footer.appendChild(copyright);
 
 const username = "NataliaSokolova";
 
-// // Fetch the list of repositories from the GitHub API
-// fetch(`https://api.github.com/users/${username}/repos`)
-//   .then(function (response) {
-//     // Convert the response to text
-//     return response.text();
-//   })
-//   .then(function (text) {
-//     const repositories = JSON.parse(text);
-
-//     displayRepositories(repositories);
-//     console.log(repositories);
-//   })
-//   .catch(function (error) {
-//     console.error("Error fetching repositories:", error);
-//   });
-
-// Fetch the list of repositories from the GitHub API
 fetch(`https://api.github.com/users/${username}/repos`)
   .then(response => {
     if (!response.ok) {
@@ -66,19 +49,19 @@ messageForm.addEventListener('submit', function(event) {
   const userEmail = event.target.usersEmail.value;
   const userMessage = event.target.usersMessage.value;
   
-  console.log('Name:', userName);
-  console.log('Email:', userEmail);
-  console.log('Message:', userMessage);
   
   const messageSection = document.getElementById("messages");
   const messageList = messageSection.querySelector('ul');
   const newMessage = document.createElement('li');
-  newMessage.innerHTML = `<a href = "mailto:${userEmail}" > ${userName}  </a>
-  <span>${userMessage}</span>`;
+ 
+  newMessage.innerHTML = `<a href="mailto:${userEmail}" class="message-email">${userName}</a>
+  <span class="message-text">${userMessage}</span>`;
 
-  const removeButton = document.createElement('button');
-  removeButton.innerText = "Remove";
-  removeButton.setAttribute('type', 'button');
+const removeButton = document.createElement('button');
+removeButton.innerText = "Remove";
+removeButton.classList.add('remove-button');  
+
+   removeButton.setAttribute('type', 'button');
   removeButton.addEventListener('click', function(){
   const entry = removeButton.parentNode;
   entry.remove();
@@ -87,6 +70,29 @@ messageForm.addEventListener('submit', function(event) {
   messageList.appendChild(newMessage);
   messageForm.reset();
 });
+
+
+
+const newsletterForm = document.querySelector('.footer-section form');
+
+
+newsletterForm.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    const emailInput = newsletterForm.querySelector('input[type="email"]');
+    const emailValue = emailInput.value.trim(); // Get the email value and trim whitespace
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(emailValue)) {
+        alert("Please enter a valid email address.");
+        return; 
+    }
+    alert(`Thank you for subscribing with the email: ${emailValue}`);
+    newsletterForm.reset();
+});
+
+
+
+
+
 
 
 
