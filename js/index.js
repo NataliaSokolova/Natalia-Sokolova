@@ -16,16 +16,16 @@ const username = "NataliaSokolova";
 fetch(`https://api.github.com/users/${username}/repos`)
   .then(response => {
     if (!response.ok) {
-      throw new Error('Request failed');  // Throw an error if the response is not OK
+      throw new Error('Request failed');  
     }
-    return response.json();  // Parse the response as JSON
+    return response.json(); 
   })
   .then(repositories => {
-    displayRepositories(repositories);  // Display the repositories
-    console.log(repositories);  // Log the repositories to the console
+    displayRepositories(repositories);  
+    console.log(repositories);  
   })
   .catch(error => {
-    console.error('An error occurred:', error);  // Log any errors that occur during the fetch
+    console.error('An error occurred:', error);  
   });
 
 
@@ -88,14 +88,6 @@ newsletterForm.addEventListener('submit', function(event) {
     alert(`Thank you for subscribing with the email: ${emailValue}`);
     newsletterForm.reset();
 });
-
-
-
-
-
-
-
-
 
 
 
