@@ -3,10 +3,12 @@
 
 body {
     margin: 0;
+    width: 100%;
     font-family:  "Montserrat", sans-serif;
     background-color:#F3F2EF;
     color: #595151; /* Default text color */
     font-size: 0.9 em;
+   
 
 }
 
@@ -268,6 +270,10 @@ form[name="leave_message"] button:hover {
 }
 
 
+
+
+/* Projects section---------------------------------------------------*/
+
 .projects-section {
     display:flex;
     background-color: #fff;
@@ -289,12 +295,7 @@ form[name="leave_message"] button:hover {
     flex: 1 1 calc(33.333%);
 }
 
-.project-image {
-    width: 100%;
-    max-width: 200px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
+
 
 .project-details {
     padding: 20px;
@@ -605,14 +606,13 @@ footer {
 
 
 @media (max-width: 600px) {
-    body{
-      font-size:medium;
-    }
-    
+   
+
     main{
         margin-top: 20px;
         margin-bottom: 80px;
-        width: 95%;   
+        width: 70%;   
+        text-align: center;
     }
     .nav-links a {
         padding: 2px;
@@ -623,16 +623,43 @@ footer {
   
     nav{
     height: 130px;
+    width: full;
+    padding: 0px;
+    margin:0px;
+    
     }
     .nav-links a:hover{
         border-bottom:hidden;
     }
+
+    .article-image{
+        max-width: 400px;
+    }
     .content{
         display: flex;
-        flex-direction: column;
-       
-       
+        flex-direction: column; 
     }
+    
+    .project-details {
+       
+        flex-direction: row;
+        
+        
+    }
+    .project-details p{
+        display: none;
+    }
+    .project-details h3 {
+       padding-right: 40px;
+    }
+
+    .project-link {
+        text-decoration: none;
+        color: #FF6400;
+        margin-top: auto;
+  
+    }
+
     h1{
         text-align: center;
     }
@@ -658,6 +685,13 @@ footer {
   
 
 }
+
+
+
+
+
+
+
 
 /* Tablet styles --------------------------------------------------------*/
 

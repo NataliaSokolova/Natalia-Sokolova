@@ -30,7 +30,7 @@ fetch(`https://api.github.com/users/${username}/repos`)
 
 
 
-const skills = ["JavaScript", "HTML", "CSS", "WordPress", "GitHub", "Git","Figma", "SQL", "Digital Marketing"];
+const skills = ["JavaScript", "R", "DOM (Document Object Model)", "APIs (Application Programming Interfaces) ", "AWS S3(Amazon Simple Storage)","SQL", "DNS","Responsive design","HTML", "CSS",  "GitHub", "Git","Figma","WordPress","Shopify", "Google Analytics", "SEO","Digital Marketing"];
 const skillsSection = document.getElementById('skills');
 const skillsList = skillsSection.querySelector('ul');
 for(let i =0 ; i < skills.length; i++){
@@ -106,7 +106,7 @@ function displayRepositories(repositories) {
         <li class="project-details">
           <h3>${repo.name}</h3>
           <p>${repo.description || "No description provided."}</p>
-          <a href="" target="_blank" class="project-link">View Project</a>
+          <a href="${repo.html_url}" target="_blank" class="project-link">View Project</a>
         </li>
       `;
 
